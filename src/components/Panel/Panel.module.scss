@@ -1,0 +1,28 @@
+.panel-wrapper {
+	max-height: 737px;
+	min-width: 700px;
+	height: 650px;
+	background: white;
+	border-radius: 8px;
+	padding: 24px 32px;
+	bottom: 100px;
+	right: 30px;
+	color: black;
+	position: absolute;
+	overflow: scroll;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.panel-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.panel-body {
+		padding: 22px 0;
+	}
+}

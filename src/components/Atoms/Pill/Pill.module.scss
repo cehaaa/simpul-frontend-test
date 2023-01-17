@@ -1,0 +1,61 @@
+@import "./../../../scss/variable.scss";
+
+.pill {
+	border-radius: 4px;
+	padding: 0.25rem 0.5rem;
+	transition: 200ms;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	position: relative;
+	font-size: $sm;
+
+	&.secondary {
+		&:hover {
+			background: #f4f4f5;
+		}
+	}
+
+	&.danger {
+		color: #f43f5e;
+		&:hover {
+			background: #ffe4e6;
+		}
+	}
+
+	&.primary {
+		color: $primary-blue;
+		&:hover {
+			background: #e7f3ff;
+		}
+	}
+
+	&.active {
+		background: #e7f3ff;
+	}
+
+	&.icon {
+		padding: 0 0.3rem;
+		cursor: pointer;
+
+		& > * {
+			width: 1rem;
+			height: 1rem;
+			transition: 200ms;
+		}
+	}
+
+	&.action {
+		position: absolute;
+		transform: translateY(40px);
+		border: 1px solid lightgray;
+		border-radius: 5px;
+		padding: 15px 0;
+		right: 0;
+		width: 120px;
+		background: white;
+		z-index: 10;
+	}
+}

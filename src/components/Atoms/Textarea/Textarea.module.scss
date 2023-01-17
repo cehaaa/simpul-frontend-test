@@ -1,0 +1,10 @@
+@import "./../../../scss/variable.scss";
+
+.textarea {
+	resize: none;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	width: 100%;
+	font-size: $base;
+	padding: 0.6rem 1rem;
+}

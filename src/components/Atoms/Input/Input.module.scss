@@ -1,0 +1,10 @@
+@import "./../../../scss/variable.scss";
+
+.input {
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	padding: 0.6rem 1rem;
+	min-width: 320px;
+	max-width: 320px;
+	font-size: $base;
+}

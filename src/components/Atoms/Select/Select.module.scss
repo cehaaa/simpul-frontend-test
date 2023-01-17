@@ -1,0 +1,51 @@
+.select {
+	border-radius: 5px;
+	padding: 13px 1rem;
+	border: 1px solid lightgray;
+	cursor: pointer;
+	transition: all 200ms;
+	position: relative;
+	background: white;
+	user-select: none;
+
+	.select-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.icon {
+		transform: translateY(2.5px);
+		width: 15px;
+		height: 15px;
+		margin-left: 10px;
+	}
+
+	.select-options {
+		position: absolute;
+		transform: translateY(25px);
+		width: 200px;
+		border: 1px solid lightgray;
+		border-radius: 5px;
+		left: 0px;
+		overflow: hidden;
+		z-index: 10;
+
+		.option {
+			padding: 0.5rem 1rem;
+			border-bottom: 1px solid lightgray;
+			cursor: pointer;
+			background: white;
+			transition: 200ms;
+			display: block;
+
+			&:hover {
+				background: #f3f4f6;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

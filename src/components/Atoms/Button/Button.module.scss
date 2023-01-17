@@ -1,0 +1,18 @@
+@import "./../../../scss/variable.scss";
+
+.button {
+	background: $primary-blue;
+	color: white;
+	font-weight: 600;
+	font-size: 1rem;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 13px 1rem;
+	cursor: pointer;
+	transition: all 200ms;
+
+	&:hover {
+		background: $primary-blue-hover;
+	}
+}

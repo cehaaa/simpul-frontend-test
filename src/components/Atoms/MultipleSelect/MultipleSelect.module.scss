@@ -1,0 +1,110 @@
+@import "./../../../scss/variable.scss";
+
+.multiple-select {
+	width: 100%;
+	cursor: pointer;
+	user-select: none;
+	padding-left: 0px;
+	overflow: hidden;
+	border-radius: 4px;
+
+	.header {
+		display: flex;
+		padding: 8px 10px;
+		background: #f3f4f6;
+
+		& > *:first-child {
+			margin-right: 1rem;
+		}
+
+		& > *:nth-child(2) {
+			display: flex;
+			overflow-x: scroll;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		.selected-option {
+			padding: 0.3rem 0.5rem;
+			font-size: $sm;
+			margin-right: 0.5rem;
+			color: #374151;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			min-width: fit-content;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.icon {
+				cursor: pointer;
+				width: 15px;
+				height: 15px;
+				margin-left: 5px;
+				transform: translateY(2px);
+			}
+		}
+	}
+
+	& .options {
+		background-color: white;
+		margin-top: 10px;
+		width: 350px;
+		border: 1px solid #e5e7eb;
+		border-radius: 4px;
+		position: relative;
+		z-index: 100;
+		padding: 8px;
+
+		& .option {
+			width: 100%;
+			margin-bottom: 10px;
+			border-radius: 4px;
+			padding: 0.4rem 0.5rem;
+			font-size: $sm;
+			color: #374151;
+		}
+	}
+
+	.slate {
+		background: $stickers-slate;
+	}
+
+	.orange {
+		background: $stickers-orange;
+	}
+
+	.yellow {
+		background: $stickers-yellow;
+	}
+
+	.cyan {
+		background: $stickers-cyan;
+	}
+
+	.green {
+		background: $stickers-green;
+	}
+
+	.purple {
+		background: $stickers-purple;
+	}
+
+	.pink {
+		background: $stickers-pink;
+	}
+
+	.darken-blue {
+		background: $stickers-darken-blue;
+	}
+
+	.icon {
+		width: 1rem;
+		height: 1rem;
+	}
+}

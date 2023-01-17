@@ -1,0 +1,51 @@
+@import "./../../../scss/variable.scss";
+
+.floating {
+	display: flex;
+	flex-direction: row-reverse;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+
+	.button {
+		margin-left: 20px;
+	}
+}
+
+.button {
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 200ms;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&.primary {
+		background: $primary-blue;
+		&:hover {
+			background: #0a66de;
+		}
+	}
+
+	&.secondary {
+		background: #f2f2f2;
+
+		&:hover {
+			background: #cbcaca;
+		}
+	}
+}
+
+.checkbox {
+	visibility: hidden;
+}
+
+.checkbox:first-child:checked {
+}
+
+// 734
+// 737
